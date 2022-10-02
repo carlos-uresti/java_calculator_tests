@@ -11,7 +11,7 @@ public class ArithmeticOperationsTest {
     String[] string1 = {"5.0", "4.0", "+"};
 
 
-    //Tests for method results()
+    //Tests for method result()
     @Test
     void additionCorrectTest()
     {
@@ -53,14 +53,14 @@ public class ArithmeticOperationsTest {
     @Test
     void multiplicationIncorrectTest()
     {
-        assertNotEquals("4.0", arithmeticOperations.result(new String[]{"2", "2", "÷"},3));
+        assertNotEquals("4.0", arithmeticOperations.result(new String[]{"2", "2", "Ã·"},3));
 
     }
 
     @Test
     void divisionCorrectTest()
     {
-        assertEquals("1.0", arithmeticOperations.result(new String[]{"2", "2", "÷"},3));
+        assertEquals("1.0", arithmeticOperations.result(new String[]{"2", "2", "Ã·"},3));
 
     }
 
